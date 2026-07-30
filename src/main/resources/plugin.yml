@@ -1,0 +1,23 @@
+name: FozmineTimedItem
+main: org.phantam.fozminetimeditem.FozmineTimedItem
+version: ${project.version}
+author: phantam
+api-version: 1.16
+softdepend:
+  - MMOItems
+  - MythicLib
+  - Oraxen
+  - ItemsAdder
+  - CraftEngine
+  - Nexo
+commands:
+  ti:
+    description: Timed item management commands.
+    usage: /ti <give|reload>
+permissions:
+  fozminetimeditem.give:
+    description: Allows giving timed items to players.
+    default: op
+  fozminetimeditem.reload:
+    description: Allows reloading the plugin configuration.
+    default: op

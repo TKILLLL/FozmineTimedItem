@@ -1,0 +1,59 @@
+# Định dạng dòng lore hiển thị thời gian còn lại
+expiry-period-format: '&e⏳ &fHết hạn sau: &7%value%'
+
+# Thông báo khi gửi vật phẩm
+give-message: '&aĐã gửi &e%amount% &f%item% &atới &e%player%'
+
+# Định dạng đơn vị thời gian
+unit-format:
+  second: '%d s'
+  minute: '%d m'
+  hour: '%d h'
+  day: '%d d'
+  seconds: '%d s'
+  minutes: '%d m'
+  hours: '%d h'
+  days: '%d d'
+
+# Khoảng thời gian kiểm tra tính theo tick (được phân bố để tránh lag)
+item-check-interval: 5
+
+# Số lượng người chơi kiểm tra mỗi tick (phân tán tải)
+players-per-tick: 5
+
+# Định dạng ngày giờ
+date-format: HH:mm:ss
+
+# Cấu hình thay thế vật phẩm khi hết hạn
+# Hỗ trợ các định dạng:
+#   VANILLA:<material>:<id>       -> VD: VANILLA:DIAMOND
+#   MMOITEM:<type>:<id>           -> VD: MMOITEM:SWORD:IRON_SWORD
+#   ITEMSADDER:<namespace>:<id>   -> VD: ITEMSADDER:MY_NAMESPACE:MY_ITEM
+#   ITEMSADDER:<id>               -> VD: ITEMSADDER:SIMPLE_ITEM
+#   NEXO:<id>                     -> VD: NEXO:MY_ITEM
+#   ORAXEN:<id>                   -> VD: ORAXEN:MY_ITEM
+#   CRAFTENGINE:<namespace>:<id>  -> VD: CRAFTENGINE:MY_NAMESPACE:MY_ITEM
+expired-item-replace:
+  enable: true   # Bật/tắt toàn bộ chức năng thay thế
+  END: "VANILLA:EMERALD"
+  SWORD_REPLACE: "MMOITEM:SWORD:WOOD_SWORD"
+
+# Ánh xạ từ ID tùy chỉnh -> item, có thể chỉ định key thay thế riêng
+item-mappings:
+  # ItemsAdder
+  MY_ITEM:
+    item: "ITEMSADDER:MY_NAMESPACE:MY_ITEM"
+    expired: "END"
+
+  # ItemsAdder
+  SIMPLE_ITEM:
+    item: "ITEMSADDER:SIMPLE_ITEM"
+
+  # MMOItems
+  SWORD:
+    item: "MMOITEM:SWORD:IRON_SWORD"
+    expired: "SWORD_REPLACE"
+
+  # Vanilla
+  DIAMOND:
+    item: "VANILLA:DIAMOND:0"
