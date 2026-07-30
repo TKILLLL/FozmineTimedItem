@@ -55,7 +55,7 @@ The plugin is designed to be **highly optimized**, **production-ready**, and **f
 
 ## 📦 Installation
 
-1. **Download** the latest `FozmineTimedItem.jar` from the [Releases](https://github.com/phantam/FozmineTimedItem/releases) page.
+1. **Download** the latest `FozmineTimedItem.jar` from the [Releases](https://github.com/TKILLLL/FozmineTimedItem/releases) page.
 2. **Place** the JAR file into your server's `plugins/` folder.
 3. **Restart** your server (or use `/reload` if you must, but restart is recommended).
 4. **Configure** the `config.yml` file (see [Configuration](#-configuration) section).
@@ -268,7 +268,7 @@ If you encounter any issues, please:
 1. Check the console logs for error messages.
 2. Ensure your `config.yml` is properly formatted (no tabs, correct indentation).
 3. Verify that the required item plugins are installed and enabled.
-4. Open an issue on [GitHub Issues](https://github.com/phantam/FozmineTimedItem/issues) with:
+4. Open an issue on [GitHub Issues](https://github.com/TKILLLL/FozmineTimedItem/issues) with:
     - Server version (Paper/Spigot and version)
     - Plugin versions (MMOItems, ItemsAdder, etc.)
     - Full error log (if any)
@@ -299,7 +299,7 @@ This project is licensed under the **MIT License** – see the [LICENSE](LICENSE
 ## 📦 Building from Source
 
 ```bash
-git clone https://github.com/phantam/FozmineTimedItem.git
+git clone https://github.com/TKILLLL/FozmineTimedItem.git
 cd FozmineTimedItem
 mvn clean package
 ```
